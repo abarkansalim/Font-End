@@ -39,7 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 )
                 .hasRole("ADMIN")
                 .antMatchers(
-                        "/clients", "/"
+                        "/clients", "/", "/css/**", "/js/**", "/webjars/**"
                 )
                 .permitAll()
                 .anyRequest()
